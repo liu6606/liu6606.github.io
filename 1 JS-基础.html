@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>1 JS-&#x57FA;&#x7840; - &#x526F;&#x672C;</title>
+      <title>1 JS-&#x57FA;&#x7840;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
@@ -370,15 +370,14 @@ a <span class="token operator">=</span> <span class="token number">1</span><span
 <li>NaN &#x8868;&#x793A;&#x4E00;&#x4E2A;&#x65E0;&#x6548;&#x7684;&#x503C;&#xFF0C;&#x5F53;&#x8FD0;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x4E0D;&#x662F;&#x6570;&#x503C;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5F97;&#x5230;&#x8BE5;&#x503C;&#x3002;</li>
 </ul>
 <pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword nil keyword-undefined">undefined</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// NaN</span>
-</pre><p>&#x5F53; number &#x7C7B;&#x578B;&#x7528;&#x4E8E;&#x4F4D;&#x8FD0;&#x7B97;&#x65F6;&#xFF0C;&#x4F1A;&#x5148;&#x5C06;&#x5176;&#x622A;&#x65AD;&#x4E3A; 32 &#x4F4D;&#x6574;&#x6570;&#xFF1A;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> a <span class="token operator">=</span> <span class="token number">0x100000000</span> <span class="token comment">// 36 &#x4F4D;</span>
-<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>a <span class="token operator">&gt;&gt;</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token comment">// 0&#xFF0C;&#x6B63;&#x5E38; a&gt;&gt;4 === 0x010000000&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x79FB;&#x4F4D;&#x524D; a &#x88AB;&#x622A;&#x65AD;&#x4E3A; 32 &#x4F4D;&#xFF0C;&#x53D8;&#x6210;&#x4E86; 0x00000000&#xFF0C;a&gt;&gt;4 &#x5C31;&#x53D8;&#x6210;&#x4E86; 0</span>
 </pre><p>&#x4E0D;&#x540C;&#x8FDB;&#x5236;&#x7684; number &#x7C7B;&#x578B;&#x5B57;&#x9762;&#x91CF;&#xFF1A;</p>
 <pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token number">0o123</span>&#x3001;<span class="token number">0O123</span> <span class="token comment">// 8&#x8FDB;&#x5236;</span>
 <span class="token number">0xAbC</span>&#x3001;<span class="token number">0XABC</span> <span class="token comment">// 16&#x8FDB;&#x5236;</span>
 <span class="token number">0b0110</span>&#x3001;<span class="token number">0B1010</span> <span class="token comment">// 2&#x8FDB;&#x5236;</span>
 </pre><p>&#x53E6;&#x5916;&#xFF0C;&#x7531;&#x4E8E;&#x6D6E;&#x70B9;&#x6570;&#x7684;&#x5B58;&#x50A8;&#x662F;&#x4E0D;&#x7CBE;&#x786E;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x6709;&#x4E0B;&#x9762;&#x7684;&#x95EE;&#x9898;&#xFF1A;</p>
 <pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">0.1</span><span class="token operator">+</span><span class="token number">0.2</span><span class="token operator">===</span><span class="token number">0.3</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+</pre><p>&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x6570;&#x5B57;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x7528; <strong>_</strong> &#x5206;&#x9694;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">1999_1000_3456</span><span class="token punctuation">)</span> <span class="token comment">// 199910003456</span>
 </pre><p><a name="LYfAq" href></a></p>
 <h2 class="mume-header" id="23-%E5%A4%A7%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B-bigint">2.3 &#x5927;&#x6574;&#x6570;&#x7C7B;&#x578B; bigint</h2>
 
@@ -463,7 +462,7 @@ o<span class="token punctuation">[</span>n<span class="token punctuation">]</spa
 </pre><p><a name="Bgugh" href></a></p>
 <h3 class="mume-header" id="254-%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF">2.5.4 &#x539F;&#x578B;&#x7EE7;&#x627F;</h3>
 
-<p>&#x8BE6;&#x89C1;&#x201C;2 JS-&#x539F;&#x578B;&#x7EE7;&#x627F;&#x548C;&#x7C7B;&#x201D;&#x4E00;&#x7AE0;&#x3002;<br>
+<p>&#x8BE6;&#x89C1;&#x201C;2 JS-&#x5BF9;&#x8C61;&#x548C;&#x7C7B;&#x201D;&#x4E00;&#x7AE0;&#x3002;<br>
 <a name="FM02x" href></a></p>
 <h2 class="mume-header" id="26-%E6%95%B0%E7%BB%84">2.6 &#x6570;&#x7EC4;</h2>
 
@@ -633,7 +632,7 @@ a<span class="token punctuation">[</span>mySymbol<span class="token punctuation"
 <span class="token keyword keyword-let">let</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>
   <span class="token punctuation">[</span>mySymbol<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</pre><p>symbol &#x5C5E;&#x6027;&#x4E0D;&#x662F;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#xFF0C;&#x4F46;&#x662F; for...in&#x3001;for...of&#x3001;Object.keys()&#x3001;Object.getOwnPropertyNames()&#x3001;JSON.stringify() &#x90FD;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE; symbol &#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Object.getOwnPropertySymbols()&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5305;&#x542B;&#x6240;&#x6709; symbol &#x5C5E;&#x6027;&#x540D;&#x3002;<br>
+</pre><p>for...in&#x3001;for...of&#x3001;Object.keys()&#x3001;Object.getOwnPropertyNames()&#x3001;JSON.stringify() &#x90FD;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE; symbol &#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Object.getOwnPropertySymbols() &#x83B7;&#x53D6;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5305;&#x542B;&#x6240;&#x6709; symbol &#x5C5E;&#x6027;&#x540D;&#x3002;<br>
 <a name="YD47v" href></a></p>
 <h3 class="mume-header" id="282-%E5%85%A8%E5%B1%80-symbol">2.8.2 &#x5168;&#x5C40; symbol</h3>
 
@@ -654,88 +653,124 @@ a<span class="token punctuation">[</span>mySymbol<span class="token punctuation"
   <span class="token punctuation">[</span><span class="token known-class-name class-name">Symbol</span><span class="token punctuation">.</span><span class="token property-access">iterator</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-</pre><p><img src="https://cdn.nlark.com/yuque/0/2023/png/23122012/1691070173987-84e542cc-cccd-492c-805e-5bebfc705d49.png#averageHue=%23fdfbf9&amp;clientId=u537f62c7-91ee-4&amp;from=paste&amp;height=54&amp;id=QhYfb&amp;originHeight=68&amp;originWidth=412&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=8766&amp;status=done&amp;style=none&amp;taskId=ub24326b2-a78e-4f37-9616-7e6b2446374&amp;title=&amp;width=329.6" alt="image.png"><br>&#x663E;&#x793A;&#x7684;&#x662F; Symbol(Symbol.iterator)&#xFF0C;&#x800C;&#x4E0D;&#x662F; Symbol.iterator&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x8F93;&#x51FA;&#x7684;&#x5176;&#x5B9E;&#x662F; symbol &#x503C;&#x88AB;&#x5305;&#x88C5;&#x6210;&#x5BF9;&#x8C61;&#x540E;&#x7684; toString() &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x4E0D;&#x662F; symbol &#x503C;&#x672C;&#x8EAB;&#xFF1A;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword keyword-new">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token known-class-name class-name">Symbol</span><span class="token punctuation">.</span><span class="token property-access">iterator</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &quot;Symbol(Symbol.iterator)&quot;</span>
+</pre><p><img src="https://cdn.nlark.com/yuque/0/2023/png/23122012/1691070173987-84e542cc-cccd-492c-805e-5bebfc705d49.png#averageHue=%23fdfbf9&amp;clientId=u537f62c7-91ee-4&amp;from=paste&amp;height=54&amp;id=QhYfb&amp;originHeight=68&amp;originWidth=412&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=8766&amp;status=done&amp;style=none&amp;taskId=ub24326b2-a78e-4f37-9616-7e6b2446374&amp;title=&amp;width=329.6" alt="image.png"><br>&#x663E;&#x793A;&#x7684;&#x662F; Symbol(Symbol.iterator)&#xFF0C;&#x800C;&#x4E0D;&#x662F; Symbol.iterator&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x8F93;&#x51FA;&#x7684;&#x5176;&#x5B9E;&#x662F; symbol &#x503C;&#x8F6C;&#x6362;&#x6210;&#x7684; string&#xFF0C;&#x800C;&#x4E0D;&#x662F; symbol &#x503C;&#x672C;&#x8EAB;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token known-class-name class-name">Symbol</span><span class="token punctuation">.</span><span class="token property-access">iterator</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &quot;Symbol(Symbol.iterator)&quot;</span>
 </pre><p><a name="J9LOH" href></a></p>
 <h1 class="mume-header" id="3-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2">3 &#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h1>
 
+<blockquote>
+<p><a href="https://wangdoc.com/javascript/features/conversion">https://wangdoc.com/javascript/features/conversion</a></p>
+</blockquote>
 <p><a name="bOprg" href></a></p>
-<h2 class="mume-header" id="31-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2">3.1 &#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h2>
+<h2 class="mume-header" id="31-%E6%98%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2">3.1 &#x663E;&#x5F0F;&#x8F6C;&#x6362;</h2>
 
-<p><a name="S2IGR" href></a></p>
-<h3 class="mume-header" id="411number">4.1.1.Number()</h3>
-
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token number">324</span><span class="token punctuation">)</span> <span class="token comment">// 324</span>
-<span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token string">&apos;324&apos;</span><span class="token punctuation">)</span> <span class="token comment">// 324</span>
-<span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token string">&apos;324abc&apos;</span><span class="token punctuation">)</span> <span class="token comment">// NaN</span>
+<p>&#x901A;&#x8FC7; Number()&#x3001;String()&#x3001;Boolean() &#x8FD9;&#x4E09;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x80FD;&#x591F;&#x5C06;&#x7ED9;&#x5B9A;&#x7684;&#x503C;&#x8F6C;&#x6362;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x539F;&#x59CB;&#x7C7B;&#x578B; number&#x3001;string&#x3001;boolean&#x3002;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token string">&apos;123&apos;</span><span class="token punctuation">)</span> <span class="token comment">// 123</span>
+<span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token string">&apos;123abc&apos;</span><span class="token punctuation">)</span> <span class="token comment">// NaN&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x5982;&#x679C;&#x5305;&#x542B;&#x975E;&#x6570;&#x5B57;&#x5219;&#x8FD4;&#x56DE; NaN</span>
 <span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token string">&apos;&apos;</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
 <span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
-<span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
+<span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token comment">// 0 </span>
 <span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token keyword nil keyword-undefined">undefined</span><span class="token punctuation">)</span> <span class="token comment">// NaN</span>
 <span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token keyword null nil keyword-null">null</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
-</pre><p>&#x53C2;&#x6570;&#x4E3A;&#x5BF9;&#x8C61;&#xFF1A;</p>
-<ul>
-<li>&#x5148;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684; valueOf() &#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#xFF08;&#x5373;&#x975E;object&#x7C7B;&#x578B;&#xFF09;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x503C;&#x8C03;&#x7528; Number() &#x5E76;&#x8FD4;&#x56DE;&#x3002;</li>
-<li>&#x5426;&#x5219;&#xFF0C;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684; toString() &#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x503C;&#x8C03;&#x7528; Number() &#x5E76;&#x8FD4;&#x56DE;&#x3002;</li>
-<li>&#x5426;&#x5219;&#x62A5;&#x9519;&#x3002;<br>
-<a name="ScrtL" href></a></li>
-</ul>
-<h3 class="mume-header" id="412string">4.1.2.String()</h3>
+<span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token known-class-name class-name">Symbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x62A5;&#x9519;&#xFF0C;Symbol &#x4E0D;&#x80FD;&#x8F6C;&#x6362;&#x6210; number</span>
+<span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token number">1n</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
 
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span> <span class="token comment">// &quot;123&quot;</span>
-<span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token string">&apos;abc&apos;</span><span class="token punctuation">)</span> <span class="token comment">// &quot;abc&quot;</span>
+<span class="token comment">/* &#x5B57;&#x7B26;&#x4E32;&#x5C31;&#x76F4;&#x63A5;&#x5305;&#x4E0A; &quot;&quot; */</span>
+<span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span> <span class="token comment">// &quot;123&quot;</span>
 <span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment">// &quot;true&quot;</span>
 <span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token keyword nil keyword-undefined">undefined</span><span class="token punctuation">)</span> <span class="token comment">// &quot;undefined&quot;</span>
 <span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token keyword null nil keyword-null">null</span><span class="token punctuation">)</span> <span class="token comment">// &quot;null&quot;</span>
-</pre><p>&#x53C2;&#x6570;&#x4E3A;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token known-class-name class-name">Symbol</span><span class="token punctuation">(</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &quot;Symbol(hello)&quot;</span>
+<span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token known-class-name class-name">Symbol</span><span class="token punctuation">.</span><span class="token property-access">iterator</span><span class="token punctuation">)</span> <span class="token comment">// &quot;Symbol(Symbol.iterator)&quot;&#xFF0C;&#x4F46;&#x662F;&#x5185;&#x7F6E;&#x7684; symbol &#x6709;&#x6240;&#x4E0D;&#x540C;</span>
+<span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token number">1n</span><span class="token punctuation">)</span> <span class="token comment">// &quot;1&quot;</span>
+
+<span class="token comment">/* Boolean() &#x9664;&#x4E86;&#x4EE5;&#x4E0B;&#x503C;&#x5916;&#xFF0C;&#x90FD;&#x8FD4;&#x56DE; true */</span>
+<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token string">&apos;&apos;</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token keyword nil keyword-undefined">undefined</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token keyword null nil keyword-null">null</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token number">NaN</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token number">0n</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+</pre><p>&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x6765;&#x8F6C;&#x6362;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li>&#x5BF9;&#x4E8E; Boolean()&#xFF0C;&#x8F6C;&#x6362;&#x6210; true&#x3002;</li>
+<li>&#x5BF9;&#x4E8E; Number()&#xFF1A;
+<ul>
+<li>&#x5148;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684; valueOf() &#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x503C;&#x8C03;&#x7528; Number() &#x5E76;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>&#x5426;&#x5219;&#xFF0C;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684; toString() &#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x503C;&#x8C03;&#x7528; Number() &#x5E76;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>&#x5426;&#x5219;&#x62A5;&#x9519;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5BF9;&#x4E8E; String()&#xFF1A;
 <ul>
 <li>&#x5148;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684; toString() &#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x503C;&#x8C03;&#x7528; String() &#x5E76;&#x8FD4;&#x56DE;&#x3002;</li>
 <li>&#x5426;&#x5219;&#xFF0C;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684; valueOf() &#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x503C;&#x8C03;&#x7528; String() &#x5E76;&#x8FD4;&#x56DE;&#x3002;</li>
 <li>&#x5426;&#x5219;&#x62A5;&#x9519;&#x3002;<br>
-<a name="vK7Bs" href></a></li>
+<a name="DoWZR" href></a></li>
 </ul>
-<h3 class="mume-header" id="413boolean">4.1.3.Boolean()</h3>
+</li>
+</ul>
+<h2 class="mume-header" id="32-%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2">3.2 &#x9690;&#x5F0F;&#x8F6C;&#x6362;</h2>
 
-<p>&#x9664;&#x4E86;&#x4EE5;&#x4E0B;&#x60C5;&#x51B5;&#x4E3A; false&#xFF0C;&#x5176;&#x4ED6;&#x90FD;&#x4E3A; true&#xFF1A;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token keyword nil keyword-undefined">undefined</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
-<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token keyword null nil keyword-null">null</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
-<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
-<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token number">NaN</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
-<span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span><span class="token string">&apos;&apos;</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
-</pre><p><a name="DoWZR" href></a></p>
-<h2 class="mume-header" id="42%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2">4.2.&#x81EA;&#x52A8;&#x8F6C;&#x6362;</h2>
+<p>&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x9884;&#x671F;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5C31;&#x4F1A;&#x76F8;&#x5E94;&#x5730;&#x81EA;&#x52A8;&#x8C03;&#x7528; Number()&#x3001;String()&#x3001;Boolean() &#x8F6C;&#x6362;&#x6210;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x6BD4;&#x5982;&#x5E38;&#x89C1;&#x7684; if &#x6761;&#x4EF6;&#x5185;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x7528; Boolean() &#x8FDB;&#x884C;&#x8F6C;&#x6362;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword control-flow keyword-if">if</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 1 &#x88AB;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x6210; true</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span> <span class="token comment">// &quot;hello&quot;</span>
+<span class="token punctuation">}</span>
+</pre><p>&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#x65F6;&#xFF0C;&#x4E5F;&#x4F1A;&#x53D1;&#x751F;&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF1A;</p>
+<ol>
+<li>&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#xFF1A;
+<ol>
+<li>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7528; Number() &#x8F6C;&#x6362;&#x3002;</li>
+<li>&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x4E0B;&#xFF08;&#x4F18;&#x5148;&#x7EA7;&#x7531;&#x9AD8;&#x5230;&#x4F4E;&#xFF09;&#xFF1A;
+<ol>
+<li>&#x64CD;&#x4F5C;&#x6570;&#x5B58;&#x5728; Date() &#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x5BF9;&#x8C61;&#x8C03;&#x7528; String()&#x3002;</li>
+<li>&#x64CD;&#x4F5C;&#x6570;&#x5B58;&#x5728;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x5BF9;&#x8C61;&#x8C03;&#x7528; Number()&#x3002;</li>
+<li>&#x52A0;&#x6CD5;&#x64CD;&#x4F5C;&#x6570;&#x5B58;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5219;&#x5BF9;&#x53E6;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x8C03;&#x7528; String()&#x3002;</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#xFF1A;&#x7528; Number() &#x8F6C;&#x6362;&#xFF0C;&#x9664;&#x4E86;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x90FD;&#x662F; string&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0D;&#x7528;&#x8F6C;&#x6362;&#xFF0C;&#x76F4;&#x63A5;&#x5BF9;&#x5B57;&#x7B26;&#x9010;&#x4E2A;&#x6BD4;&#x8F83;&#x3002;</li>
+<li>== &#x548C; !=&#xFF1A;
+<ol>
+<li>&#x64CD;&#x4F5C;&#x6570;&#x4E0D;&#x662F;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#xFF0C;&#x5BF9;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x6570;&#x8C03;&#x7528; Number() &#x8F6C;&#x6362;&#xFF0C;&#x662F;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#x4E0D;&#x7528;&#x8F6C;&#x6362;&#x3002;</li>
+<li>undefined &#x548C; null &#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x4F1A;&#x8F6C;&#x6362;&#xFF0C;&#x6709;&#xFF1A;undefined == null&#xFF0C;&#x5E76;&#x4E14;&#x610F;&#x5473;&#x7740;&#x5176;&#x5B83;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x4E0E;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x4E0D;&#x7B49;&#x3002;</li>
+</ol>
+</li>
+<li>=== &#x548C; !==&#xFF1A;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x8BA4;&#x4E3A;&#x662F;&#x4E0D;&#x76F8;&#x7B49;&#x3002;</li>
+</ol>
+<p>&#x4F46;&#x662F;&#x6CE8;&#x610F;&#xFF0C;&#x5728;&#x4E0E;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#x65F6;&#xFF0C;bigint &#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#xFF0C;&#x4F1A;&#x62A5;&#x9519;&#x3002;<br>
+<a name="z4AME" href></a></p>
+<h1 class="mume-header" id="4-%E8%BF%90%E7%AE%97">4 &#x8FD0;&#x7B97;</h1>
 
-<p>&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x9884;&#x671F;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5C31;&#x4F1A;&#x76F8;&#x5E94;&#x5730;&#x81EA;&#x52A8;&#x8C03;&#x7528; Number()&#x3001;String()&#x3001;Boolean() &#x8F6C;&#x6362;&#x6210;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x3002;<br>&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#x65F6;&#xFF0C;&#x4E5F;&#x4F1A;&#x53D1;&#x751F;&#x81EA;&#x52A8;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th>&#x8FD0;&#x7B97;</th>
-<th>&#x8F6C;&#x6362;&#x89C4;&#x5219;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&#x7B97;&#x6570;&#x8FD0;&#x7B97;</td>
-<td>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7528; Number() &#x8F6C;&#x6362;&#x3002;<br>&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x4E0B;&#xFF08;&#x4F18;&#x5148;&#x7EA7;&#x7531;&#x9AD8;&#x5230;&#x4F4E;&#xFF09;&#xFF1A;<br>- &#x64CD;&#x4F5C;&#x6570;&#x5B58;&#x5728; Date() &#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x5BF9;&#x8C61;&#x8C03;&#x7528; String()&#x3002;<br>- &#x64CD;&#x4F5C;&#x6570;&#x5B58;&#x5728;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x5BF9;&#x8BE5;&#x5BF9;&#x8C61;&#x8C03;&#x7528; Number()&#x3002;<br>- &#x52A0;&#x6CD5;&#x64CD;&#x4F5C;&#x6570;&#x5B58;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5219;&#x5BF9;&#x53E6;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x8C03;&#x7528; String()&#x3002;<br></td>
-</tr>
-<tr>
-<td>&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;</td>
-<td>&#x7528; Number() &#x8F6C;&#x6362;&#xFF0C;&#x9664;&#x4E86;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x90FD;&#x662F; string&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0D;&#x7528;&#x8F6C;&#x6362;&#x3002;</td>
-</tr>
-<tr>
-<td>==&#x548C;!=</td>
-<td><br>- &#x64CD;&#x4F5C;&#x6570;&#x4E0D;&#x662F;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#xFF0C;&#x5BF9;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x6570;&#x8C03;&#x7528; Number() &#x8F6C;&#x6362;&#xFF0C;&#x662F;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#x4E0D;&#x7528;&#x8F6C;&#x6362;&#x3002;<br>- undefined &#x548C; null &#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x4F1A;&#x8F6C;&#x6362;&#xFF0C;&#x6709;&#xFF1A;undefined == null&#xFF0C;&#x5E76;&#x4E14;&#x610F;&#x5473;&#x7740;&#x5176;&#x5B83;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x4E0E;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x4E0D;&#x7B49;&#x3002;<br></td>
-</tr>
-<tr>
-<td>=<mark>&#x548C;!</mark></td>
-<td>&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x8BA4;&#x4E3A;&#x662F;&#x4E0D;&#x76F8;&#x7B49;&#x3002;</td>
-</tr>
-</tbody>
-</table>
-<p><a name="z4AME" href></a></p>
-<h1 class="mume-header" id="3%E8%BF%90%E7%AE%97">3.&#x8FD0;&#x7B97;</h1>
+<blockquote>
+<p><a href="https://wangdoc.com/javascript/operators/">https://wangdoc.com/javascript/operators/</a></p>
+</blockquote>
+<p><a name="k6ypK" href></a></p>
+<h2 class="mume-header" id="41-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97">4.1 &#x7B97;&#x672F;&#x8FD0;&#x7B97;</h2>
 
-<p>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x5E76;&#x4E0D;&#x8FD4;&#x56DE;&#x5E03;&#x5C14;&#x503C;&#x3002;</p>
+<p>&#x64CD;&#x4F5C;&#x6570;&#x4E3A; number&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<ul>
+<li>&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x + y&#x3002;</li>
+<li>&#x51CF;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x - y&#x3002;</li>
+<li>&#x4E58;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x * y&#x3002;</li>
+<li>&#x9664;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x / y&#x3002;&#x5BF9;&#x4E8E; number &#x7C7B;&#x578B;&#xFF0C;&#x662F;&#x76F4;&#x63A5;&#x9664;&#xFF1B;&#x5BF9;&#x4E8E; bigint &#x7C7B;&#x578B;&#x5219;&#x662F;&#x53D6;&#x6574;&#x3002;</li>
+<li>&#x6307;&#x6570;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x ** y&#xFF0C;&#x6BD4;&#x5982; 2**3===8&#x3002;</li>
+<li>&#x4F59;&#x6570;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x % y&#x3002;</li>
+<li>&#x81EA;&#x589E;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;++x &#x6216;&#x8005; x++&#x3002;</li>
+<li>&#x81EA;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;--x &#x6216;&#x8005; x--&#x3002;</li>
+<li>&#x6570;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;+x&#x3002;</li>
+<li>&#x8D1F;&#x6570;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;-x&#x3002;<br>
+<a name="ynqvf" href></a></li>
+</ul>
+<h2 class="mume-header" id="42-%E5%B8%83%E5%B0%94%E8%BF%90%E7%AE%97%E7%AC%A6">4.2 &#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x7B26;</h2>
+
+<p>&#x64CD;&#x4F5C;&#x6570;&#x4E3A; boolean&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<ul>
+<li>&#x53D6;&#x53CD;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;! x&#x3002;</li>
+<li>&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x ? y : z&#x3002;</li>
+<li>&#x4E0E;&#x3001;&#x6216;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x &amp;&amp; y&#x3001;x || y&#x3002;&#x90FD;&#x662F;&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x5B9E;&#x9645;&#x4E0A;&#x5B83;&#x4E0D;&#x8FD4;&#x56DE;&#x5E03;&#x5C14;&#x503C;&#xFF1A;</li>
+</ul>
 <pre data-role="codeBlock" data-info="javascript" class="language-javascript">x <span class="token operator">&amp;&amp;</span> y
 <span class="token comment">//&#x7B49;&#x4EF7;&#x4E8E;</span>
 <span class="token keyword control-flow keyword-if">if</span><span class="token punctuation">(</span><span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token keyword control-flow keyword-return">return</span> x<span class="token punctuation">;</span>
@@ -745,37 +780,148 @@ x <span class="token operator">||</span> y
 <span class="token comment">//&#x7B49;&#x4EF7;&#x4E8E;</span>
 <span class="token keyword control-flow keyword-if">if</span><span class="token punctuation">(</span><span class="token known-class-name class-name">Boolean</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token keyword control-flow keyword-return">return</span> x<span class="token punctuation">;</span>
 <span class="token keyword control-flow keyword-else">else</span> <span class="token keyword control-flow keyword-return">return</span> y<span class="token punctuation">;</span>
-</pre><p>&#x4F4D;&#x8FD0;&#x7B97;&#x5C06;&#x64CD;&#x4F5C;&#x6570;&#x8F6C;&#x6362;&#x4E3A;32&#x4F4D;&#x6574;&#x6570;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#xFF08;&#x76F4;&#x63A5;&#x622A;&#x65AD;&#x4E3A;32&#x4F4D;&#x6574;&#x6570;&#xFF09;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x662F;32&#x4F4D;&#x6574;&#x6570;&#x3002;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token operator">~</span><span class="token operator">~</span><span class="token number">1.234</span> <span class="token comment">// 1</span>
-</pre><p>void &#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x4F1A;&#x6267;&#x884C;&#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4F46;&#x4E0D;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x6709;&#x4EE5;&#x4E0B;&#x4F5C;&#x7528;&#xFF1A;</p>
-<pre data-role="codeBlock" data-info="html" class="language-html">// &#x5982;&#x4E0B;&#x6240;&#x793A;&#x7684;&#x94FE;&#x63A5;&#x4E2D;&#xFF0C;&#x4F1A;&#x5C06;javascript:&#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x6587;&#x672C;&#x66FF;&#x4EE3;&#x5F53;&#x524D;&#x9875;&#x9762;&#xFF0C;&#x9664;&#x975E;&#x503C;&#x4E3A;undefined&#xFF08;chrome&#x4E2D;&#x53EA;&#x6709;&#x503C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x624D;&#x4F1A;&#x66FF;&#x6362;&#xFF09;
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>javascript: document.body.style.background=<span class="token punctuation">&apos;</span>red<span class="token punctuation">&apos;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x9875;&#x9762;&#x88AB;&#x6587;&#x672C;red&#x66FF;&#x4EE3;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
-// &#x52A0;&#x4E0A;void&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x4E86;
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>javascript: void(document.body.style.background=<span class="token punctuation">&apos;</span>red<span class="token punctuation">&apos;</span>)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x9875;&#x9762;&#x53D8;&#x4E3A;&#x7EA2;&#x8272;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</pre><p><a name="Obat6" href></a></p>
+<h2 class="mume-header" id="43-%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6">4.3 &#x4F4D;&#x8FD0;&#x7B97;&#x7B26;</h2>
 
-// void&#x8FD8;&#x53EF;&#x7528;&#x4E8E;&#x963B;&#x6B62;&#x4E8B;&#x4EF6;&#x7684;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#xFF0C;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x4EE3;&#x7801;&#x6700;&#x540E;&#x8FD4;&#x56DE;false&#xFF0C;&#x70B9;&#x51FB;&#x94FE;&#x63A5;&#x540E;&#x5C06;&#x4E0D;&#x4F1A;&#x8DF3;&#x8F6C;
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.baidu.com<span class="token punctuation">&quot;</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value javascript language-javascript"><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token keyword control-flow keyword-return">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>&#x70B9;&#x51FB;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
-// &#x4F7F;&#x7528;void&#x6548;&#x679C;&#x76F8;&#x540C;
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>javascript: void(f())<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x70B9;&#x51FB;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
-</pre><p><a name="XK9W1" href></a></p>
-<h1 class="mume-header" id="5%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86">5.&#x9519;&#x8BEF;&#x5904;&#x7406;</h1>
-
-<p>&#x6240;&#x6709;&#x9519;&#x8BEF;&#x90FD;&#x662F; Error &#x5BF9;&#x8C61;&#xFF0C;&#x6709;6&#x4E2A;&#x5B50;&#x7C7B;: SyntaxError&#x3001;TypeError&#x3001;ReferenceError&#x3001;RangeError&#x3001;URIError&#x3001;EvalError&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x5BF9;&#x8C61;&#xFF0C;&#x53EA;&#x9700;&#x7EE7;&#x627F; Error&#x3002;<br>&#x4F7F;&#x7528; try&#x3001;catch&#x3001;finally &#x6355;&#x83B7;&#x9519;&#x8BEF;&#x3002;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-var">var</span> err <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&apos;&#x51FA;&#x9519;&#x4E86;&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-err<span class="token punctuation">.</span><span class="token property-access">message</span> <span class="token comment">// &quot;&#x51FA;&#x9519;&#x4E86;&quot;</span>
-err<span class="token punctuation">.</span><span class="token property-access">stack</span><span class="token punctuation">;</span> <span class="token comment">// &#x975E;&#x6807;&#x51C6;&#x7684;</span>
-</pre><ul>
-<li>throw &#x53EF;&#x4EE5;&#x629B;&#x51FA; Error &#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x4E5F;&#x53EF;&#x4EE5;&#x629B;&#x51FA;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x7A0B;&#x5E8F;&#x9047;&#x5230; throw &#x5C31;&#x7EC8;&#x6B62;&#xFF0C;&#x5E76;&#x4E0D;&#x7BA1;&#x5B83;&#x629B;&#x51FA;&#x7684;&#x662F;&#x4E0D;&#x662F;&#x9519;&#x8BEF;&#x3002;</li>
-<li>&#x5982;&#x679C;&#x662F;&#x5728;&#x51FD;&#x6570;&#x4E2D; return &#x800C;&#x975E;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;finally &#x6700;&#x540E;&#x4E5F;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x679C; finally &#x4E5F;&#x6709; return&#xFF0C;&#x90A3;&#x4E48;&#x51FD;&#x6570;&#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#x7684;&#x662F; finally &#x4E2D;&#x7684; return&#x3002;</li>
+<p>&#x4F4D;&#x8FD0;&#x7B97;&#x9488;&#x5BF9;&#x8865;&#x7801;&#xFF1A;</p>
+<ul>
+<li>&#x771F;&#x503C;&#xFF1A;&#x5E26;&#x6709;&#x6B63;&#x8D1F;&#x53F7;&#x7684;&#x503C;&#x3002;&#x4EE3;&#x7801;&#x4E2D;&#x4E66;&#x5199;&#x7684;&#x6570;&#x503C;&#x90FD;&#x662F;&#x771F;&#x503C;&#xFF0C;&#x6BD4;&#x5982; -0b0101&#x3002;</li>
+<li>&#x539F;&#x7801;&#xFF1A;&#x5220;&#x9664;&#x771F;&#x503C;&#x7684;&#x6B63;&#x8D1F;&#x53F7;&#xFF0C;&#x6700;&#x9AD8;&#x4F4D;&#x589E;&#x52A0;&#x4E00;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;&#x7B26;&#x53F7;&#x4F4D;&#x53D6; 0&#x3001;1 &#x5206;&#x522B;&#x4EE3;&#x8868;&#x6B63;&#x8D1F;&#x3002;&#x5047;&#x8BBE;&#x503C;&#x4E3A; 8 &#x4F4D;&#xFF0C;&#x6700;&#x9AD8;&#x4F4D;&#x4E3A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;&#x5219;&#x771F;&#x503C; -0b0101 &#x7684;&#x539F;&#x7801;&#x4E3A; 1000_0101&#x3002;</li>
+<li>&#x8865;&#x7801;&#xFF1A;&#x539F;&#x7801;&#x9664;&#x7B26;&#x53F7;&#x4F4D;&#x5916;&#x53D6;&#x53CD;&#x518D;+1&#xFF0C;&#x6BD4;&#x5982;&#x539F;&#x7801; 1000_0101 &#x7684;&#x8865;&#x7801;&#x4E3A; 1111_1011&#xFF1B;&#x53CD;&#x4E4B;&#x7531;&#x8865;&#x7801;&#x6C42;&#x53CD;&#x7801;&#xFF0C;&#x4E5F;&#x662F;&#x5C06;&#x8865;&#x7801;&#x9664;&#x7B26;&#x53F7;&#x4F4D;&#x5916;&#x53D6;&#x53CD;&#x518D;+1&#xFF0C;&#x6BD4;&#x5982;&#x8865;&#x7801; 1111_1011 &#x7684;&#x539F;&#x7801;&#x4E3A; 1000_0101&#x3002;</li>
 </ul>
+<p>JavaScript &#x4E2D;&#x6709;&#x4EE5;&#x4E0B;&#x4F4D;&#x8FD0;&#x7B97;&#xFF1A;</p>
+<ul>
+<li>&#x4E8C;&#x8FDB;&#x5236;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x &amp; y&#x3002;</li>
+<li>&#x4E8C;&#x8FDB;&#x5236;&#x6216;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x | y&#x3002;</li>
+<li>&#x4E8C;&#x8FDB;&#x5236;&#x5426;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;~x&#x3002;</li>
+<li>&#x5F02;&#x6216;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x ^ y&#x3002;</li>
+<li>&#x7B97;&#x672F;&#x5DE6;&#x79FB;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x &lt;&lt; 1&#x3002;&#x4F4E;&#x4F4D;&#x8865; 0&#x3002;</li>
+<li>&#x7B97;&#x672F;&#x53F3;&#x79FB;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x &gt;&gt; 1&#x3002;&#x9AD8;&#x4F4D;&#x8865;&#x7B26;&#x53F7;&#x4F4D;&#x3002;</li>
+<li>&#x903B;&#x8F91;&#x53F3;&#x79FB;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;x &gt;&gt;&gt; 1&#x3002;&#x9AD8;&#x4F4D;&#x8865; 0&#x3002;</li>
+</ul>
+<p>&#x64CD;&#x4F5C;&#x6570;&#x5C06;&#x88AB;&#x8F6C;&#x6362;&#x6210; 32 &#x4F4D;&#x5E26;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF0C;&#x5C0F;&#x6570;&#x90E8;&#x5206;&#x548C;&#x9AD8;&#x4F4D;&#x88AB;&#x820D;&#x5F03;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token operator">~</span><span class="token operator">~</span><span class="token number">1.234</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">0x100000000</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// 0&#xFF0C;&#x9AD8;&#x4E8E; 32 &#x4F4D;&#x7684;&#x90E8;&#x5206;&#x88AB;&#x820D;&#x5F03;&#x4E86;</span>
+</pre><p>&#x7528;&#x4E8E;&#x4F4D;&#x8FD0;&#x7B97;&#x7684;&#x6574;&#x6570;&#x4E0D;&#x8981;&#x8D85;&#x8FC7; 31 &#x4F4D;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x6B63;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;&#x8DDF; 0 &#x6C42;&#x6216;&#xFF0C;&#x7ED3;&#x679C;&#x4E0D;&#x4F1A;&#x53D8;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x91CC;&#x4E00;&#x4E2A; 32 &#x4F4D;&#x7684;&#x6B63;&#x6570;&#x8DDF; 0 &#x6C42;&#x6216;&#x540E;&#x7ED3;&#x679C;&#x5374;&#x662F;&#x4E00;&#x4E2A;&#x8D1F;&#x6570;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">0b1000_0000_0000_0000_0000_0000_0000_0000</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">0b1000_0000_0000_0000_0000_0000_0000_0000</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// true false</span>
+</pre><p>&#x7528;&#x4F4D;&#x8FD0;&#x7B97;&#x6765;&#x5C06; RGB &#x503C;&#x53D8;&#x6210; 16 &#x8FDB;&#x5236;&#x503C;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-var">var</span> color <span class="token operator">=</span> <span class="token punctuation">{</span>r<span class="token operator">:</span> <span class="token number">186</span><span class="token punctuation">,</span> g<span class="token operator">:</span> <span class="token number">218</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">85</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x4E00;&#x4E2A;&#x989C;&#x8272;&#x5360; 8 &#x4F4D;&#xFF0C;&#x6240;&#x4EE5; (r &lt;&lt; 16), (g &lt;&lt; 8)&#x3002;(1 &lt;&lt; 24) &#x7684;&#x4F5C;&#x7528;&#x4E3A;&#x4FDD;&#x8BC1;&#x7ED3;&#x679C;&#x662F; 6 &#x4F4D;&#x6570;&#xFF0C;&#x5373;&#x9632;&#x6B62;&#x6700;&#x9AD8;&#x4F4D;&#x4E3A; 0 &#x88AB;&#x7701;&#x7565;&#x3002;</span>
+<span class="token keyword keyword-var">var</span> <span class="token function-variable function">rgb2hex</span> <span class="token operator">=</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">r<span class="token punctuation">,</span> g<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword control-flow keyword-return">return</span> <span class="token string">&apos;#&apos;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token number">24</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span>r <span class="token operator">&lt;&lt;</span> <span class="token number">16</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span>g <span class="token operator">&lt;&lt;</span> <span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">+</span> b<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token method function property-access">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span> <span class="token comment">// &#x5148;&#x8F6C; 16 &#x516D;&#x8FDB;&#x5236;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&quot;#1bada55&quot;</span>
+    <span class="token punctuation">.</span><span class="token method function property-access">substr</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// &#x53BB;&#x9664; (1 &lt;&lt; 24) &#x6DFB;&#x52A0;&#x7684;&#x6700;&#x9AD8;&#x4F4D; 1&#xFF0C;&#x8FD4;&#x56DE;&#x540E;&#x9762;&#x516D;&#x4E2A;&#x5B57;&#x7B26;</span>
+<span class="token punctuation">}</span>
+<span class="token function">rgb2hex</span><span class="token punctuation">(</span>color<span class="token punctuation">.</span><span class="token property-access">r</span><span class="token punctuation">,</span> color<span class="token punctuation">.</span><span class="token property-access">g</span><span class="token punctuation">,</span> color<span class="token punctuation">.</span><span class="token property-access">b</span><span class="token punctuation">)</span> <span class="token comment">// &quot;#bada55&quot;</span>
+</pre><p><a name="NYE0e" href></a></p>
+<h2 class="mume-header" id="44-%E5%85%B6%E4%BB%96%E8%BF%90%E7%AE%97%E7%AC%A6">4.4 &#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x7B26;</h2>
+
+<p><a name="otHq2" href></a></p>
+<h3 class="mume-header" id="441-void">4.4.1 void</h3>
+
+<p>void &#x8FD0;&#x7B97;&#x7B26;&#x5BF9;&#x64CD;&#x4F5C;&#x6570;&#x6C42;&#x503C;&#xFF0C;&#x4F46;&#x4E0D;&#x8FD4;&#x56DE;&#x503C;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-var">var</span> x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-void">void</span> <span class="token punctuation">(</span>x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment">//undefined</span>
+x <span class="token comment">// 5</span>
+</pre><p>void &#x8FD0;&#x7B97;&#x7B26;&#x8FD8;&#x6709;&#x4EE5;&#x4E0B;&#x7528;&#x9014;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="html" class="language-html">// &#x70B9;&#x51FB;&#x8BE5;&#x94FE;&#x63A5;&#xFF0C;&#x4F1A;&#x5C06; javascript: &#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x6587;&#x672C;&#x66FF;&#x4EE3;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x9664;&#x975E;&#x503C;&#x4E3A; undefined
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>javascript: document.body.style.background=<span class="token punctuation">&apos;</span>red<span class="token punctuation">&apos;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x9875;&#x9762;&#x88AB;&#x6587;&#x672C;red&#x66FF;&#x4EE3;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+// &#x52A0;&#x4E0A; void &#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4EC5;&#x4EC5;&#x662F;&#x6267;&#x884C;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>javascript: void(document.body.style.background=<span class="token punctuation">&apos;</span>red<span class="token punctuation">&apos;</span>)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x9875;&#x9762;&#x53D8;&#x4E3A;&#x7EA2;&#x8272;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</pre><p><a name="qJKhb" href></a></p>
+<h3 class="mume-header" id="442-">4.4.2 ?.&#x3001;?.[]</h3>
+
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x7B26;&#x7528;&#x6765;&#x8BBF;&#x95EE;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF1A;<strong>obj?.name</strong>&#x3001;<strong>obj?.[&quot;name&quot;]</strong>&#x3002;</p>
+<ul>
+<li>&#x5F53; obj &#x4E3A; undefined &#x6216; null &#x65F6;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; undefined&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x62A5;&#x9519;&#xFF1B;&#x5982;&#x679C;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x6B63;&#x5E38;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;&#x3002;</li>
+<li>&#x6CE8;&#x610F;&#x5B83;&#x53EA;&#x4F1A;&#x9A8C;&#x8BC1; obj &#x662F;&#x4E0D;&#x662F; undefined &#x6216; null&#xFF0C;&#x5982;&#x679C; obj &#x53D8;&#x91CF;&#x4E0D;&#x5B58;&#x5728;&#x3001;&#x6216;&#x8005; obj &#x4E3A; number &#x7B49;&#x7C7B;&#x578B;&#xFF0C;&#x90FD;&#x8FD8;&#x662F;&#x4F1A;&#x62A5;&#x9519;&#x7684;&#x3002;</li>
+</ul>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> obj <span class="token operator">=</span> <span class="token keyword nil keyword-undefined">undefined</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>obj<span class="token operator">?.</span>name<span class="token punctuation">,</span> obj<span class="token operator">?.</span><span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// undefined undefined</span>
+</pre><p><a name="D2UkH" href></a></p>
+<h3 class="mume-header" id="442--1">4.4.2 ?.()</h3>
+
+<p>&#x7528;&#x6765;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x6216;&#x65B9;&#x6CD5;&#xFF0C;<strong>f?.()</strong>&#x3001;<strong>obj.f?.()</strong>&#x3002;</p>
+<ul>
+<li>&#x5F53; f &#x662F; undefined &#x6216; null &#x65F6;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; undefined&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x62A5;&#x9519;&#xFF1B;&#x5982;&#x679C;&#x662F;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x6B63;&#x5E38;&#x8C03;&#x7528;&#x3002;</li>
+<li>&#x6CE8;&#x610F;&#x5B83;&#x53EA;&#x4F1A;&#x9A8C;&#x8BC1; f &#x662F;&#x4E0D;&#x662F; undefined &#x6216; null&#xFF0C;&#x5982;&#x679C; f &#x4E0D;&#x5B58;&#x5728;&#x3001;&#x6216;&#x8005; f &#x4E3A; number &#x7B49;&#x7C7B;&#x578B;&#xFF0C;&#x90FD;&#x8FD8;&#x662F;&#x4F1A;&#x62A5;&#x9519;&#x7684;&#x3002;</li>
+</ul>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> f <span class="token operator">=</span> <span class="token keyword nil keyword-undefined">undefined</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>f<span class="token operator">?.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// undefined</span>
+</pre><p><a name="d1wAQ" href></a></p>
+<h3 class="mume-header" id="443-">4.4.3 ??</h3>
+
+<p><strong>a ?? b</strong>&#x3002;&#x5982;&#x679C; a &#x4E0D;&#x662F; undefined &#x6216; null&#xFF0C;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FD4;&#x56DE; a&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; b&#x3002;<br>&#x4E0E; || &#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F; || &#x4E0D;&#x5149;&#x8BC6;&#x522B; undefined&#x3001;null&#xFF0C;&#x5B83;&#x8BC6;&#x522B;&#x6240;&#x6709; Boolean() &#x8F6C;&#x6362;&#x540E;&#x4E3A; false &#x7684;&#x503C;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword null nil keyword-null">null</span> <span class="token operator">??</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword null nil keyword-null">null</span> <span class="token operator">||</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token boolean">false</span> <span class="token operator">??</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token boolean">false</span> <span class="token operator">||</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+</pre><p><a name="XK9W1" href></a></p>
+<h1 class="mume-header" id="5-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86">5 &#x9519;&#x8BEF;&#x5904;&#x7406;</h1>
+
+<blockquote>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Control_flow_and_error_handling">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Control_flow_and_error_handling</a></p>
+</blockquote>
+<p><a name="bWlD6" href></a></p>
+<h2 class="mume-header" id="51-%E6%8A%9B%E5%87%BA%E5%92%8C%E6%8D%95%E8%8E%B7%E9%94%99%E8%AF%AF">5.1 &#x629B;&#x51FA;&#x548C;&#x6355;&#x83B7;&#x9519;&#x8BEF;</h2>
+
+<p>JavaScript &#x4E2D;&#x4F7F;&#x7528; throw &#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x4F7F;&#x7528; try...catch...finally &#x8FDB;&#x884C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x3002;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword control-flow keyword-try">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword control-flow keyword-throw">throw</span> <span class="token string">&quot;error&quot;</span> <span class="token comment">// throw &#x53EF;&#x4EE5;&#x629B;&#x51FA;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x503C;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// throw &#x540E;&#x7684;&#x8BED;&#x53E5;&#x5C06;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-catch">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x53C2;&#x6570; e &#x4E3A; throw &#x629B;&#x51FA;&#x7684;&#x503C;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token comment">// &quot;error&quot;</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-finally">finally</span> <span class="token punctuation">{</span>
+		<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">&quot;end&quot;</span><span class="token punctuation">)</span> <span class="token comment">// &quot;end&quot;</span>
+<span class="token punctuation">}</span>
+</pre><p>&#x4E00;&#x822C; throw &#x4F1A;&#x629B;&#x51FA; Error &#x5373;&#x5176;&#x5B50;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword control-flow keyword-try">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword control-flow keyword-throw">throw</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;my error&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-catch">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token property-access">message</span><span class="token punctuation">)</span> <span class="token comment">// &quot;my error&quot;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token property-access">stack</span><span class="token punctuation">)</span> <span class="token comment">// &#x9519;&#x8BEF;&#x53D1;&#x751F;&#x65F6;&#x7684;&#x8C03;&#x7528;&#x6808;&#x4FE1;&#x606F;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token property-access">name</span><span class="token punctuation">)</span> <span class="token comment">// &quot;Error&quot;&#xFF0C;&#x9519;&#x8BEF;&#x7C7B;&#x7C7B;&#x540D;</span>
+<span class="token punctuation">}</span>
+</pre><p><a name="jFzLz" href></a></p>
+<h2 class="mume-header" id="52-catch-%E5%92%8C-finally-%E5%86%85%E6%89%A7%E8%A1%8C-return">5.2 catch &#x548C; finally &#x5185;&#x6267;&#x884C; return</h2>
+
+<p>catch &#x548C; funally &#x5757;&#x4E2D;&#x5982;&#x679C;&#x6267;&#x884C; return &#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x4F1A;&#x5EF6;&#x8FDF;&#x5230; finally &#x5757;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#x518D;&#x6267;&#x884C;&#xFF1A;</p>
 <pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-function">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword control-flow keyword-try">try</span> <span class="token punctuation">{</span>
-    <span class="token keyword control-flow keyword-return">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0</span>
+    <span class="token keyword control-flow keyword-throw">throw</span> <span class="token string">&quot;error&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword control-flow keyword-catch">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
+    <span class="token keyword control-flow keyword-return">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// &#x5EF6;&#x8FDF;&#x5230; finally &#x7ED3;&#x675F;&#x540E;&#x518D;&#x6267;&#x884C;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x56E0;&#x4E3A;&#x524D;&#x9762; return &#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</span>
   <span class="token punctuation">}</span> <span class="token keyword control-flow keyword-finally">finally</span> <span class="token punctuation">{</span>
-    <span class="token keyword control-flow keyword-return">return</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+    <span class="token keyword control-flow keyword-return">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">// &#x8986;&#x76D6; catch &#x4E2D;&#x7684; return true</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x56E0;&#x4E3A;&#x524D;&#x9762; return &#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</span>
   <span class="token punctuation">}</span>
+  <span class="token comment">// finally &#x4E2D;&#x7684; return true &#x5728;&#x8FD9;&#x6267;&#x884C;</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x56E0;&#x4E3A;&#x524D;&#x9762; return &#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</span>
 <span class="token punctuation">}</span>
-<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+</pre><p><a name="j4bII" href></a></p>
+<h2 class="mume-header" id="53-%E5%AF%B9%E5%BC%82%E6%AD%A5%E4%BB%A3%E7%A0%81%E8%BF%9B%E8%A1%8C%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86">5.3 &#x5BF9;&#x5F02;&#x6B65;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x9519;&#x8BEF;&#x5904;&#x7406;</h2>
+
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token comment">// 1. &#x9519;&#x8BEF;&#x5199;&#x6CD5;</span>
+<span class="token keyword control-flow keyword-try">try</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword control-flow keyword-throw">throw</span> <span class="token string">&quot;error&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-catch">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token comment">// &#x8FD9;&#x91CC;&#x4E0D;&#x4F1A;&#x6355;&#x83B7;&#x5230; setTimeout &#x4E2D;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 2. &#x6B63;&#x786E;&#x5199;&#x6CD5;</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword control-flow keyword-try">try</span> <span class="token punctuation">{</span>
+        <span class="token keyword control-flow keyword-throw">throw</span> <span class="token string">&quot;error&quot;</span>
+    <span class="token punctuation">}</span> <span class="token keyword control-flow keyword-catch">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
 </pre>
       </div>
       <div class="md-sidebar-toc">
@@ -927,43 +1073,85 @@ err<span class="token punctuation">.</span><span class="token property-access">s
 </a>
           </summary>
         <div>
-          <details style="padding:0;;padding-left:24px;" open>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#31-&#x663E;&#x5F0F;&#x8F6C;&#x6362;" class="md-toc-link">
+            <p>3.1 &#x663E;&#x5F0F;&#x8F6C;&#x6362;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#32-&#x9690;&#x5F0F;&#x8F6C;&#x6362;" class="md-toc-link">
+            <p>3.2 &#x9690;&#x5F0F;&#x8F6C;&#x6362;</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open>
         <summary class="md-toc-link-wrapper">
-          <a href="#31-&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;" class="md-toc-link"><p>3.1 &#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</p>
+          <a href="#4-&#x8FD0;&#x7B97;" class="md-toc-link"><p>4 &#x8FD0;&#x7B97;</p>
 </a>
           </summary>
         <div>
           <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#411number" class="md-toc-link">
-            <p>4.1.1.Number()</p>
+          <a href="#41-&#x7B97;&#x672F;&#x8FD0;&#x7B97;" class="md-toc-link">
+            <p>4.1 &#x7B97;&#x672F;&#x8FD0;&#x7B97;</p>
 
           </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#412string" class="md-toc-link">
-            <p>4.1.2.String()</p>
+          <a href="#42-&#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x7B26;" class="md-toc-link">
+            <p>4.2 &#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x7B26;</p>
 
           </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#413boolean" class="md-toc-link">
-            <p>4.1.3.Boolean()</p>
+          <a href="#43-&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;" class="md-toc-link">
+            <p>4.3 &#x4F4D;&#x8FD0;&#x7B97;&#x7B26;</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#44-&#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x7B26;" class="md-toc-link"><p>4.4 &#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x7B26;</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#441-void" class="md-toc-link">
+            <p>4.4.1 void</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#442-" class="md-toc-link">
+            <p>4.4.2 ?.&#x3001;?.[]</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#442--1" class="md-toc-link">
+            <p>4.4.2 ?.()</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#443-" class="md-toc-link">
+            <p>4.4.3 ??</p>
 
           </a></div>
         </div>
       </details>
-    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#42&#x81EA;&#x52A8;&#x8F6C;&#x6362;" class="md-toc-link">
-            <p>4.2.&#x81EA;&#x52A8;&#x8F6C;&#x6362;</p>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#5-&#x9519;&#x8BEF;&#x5904;&#x7406;" class="md-toc-link"><p>5 &#x9519;&#x8BEF;&#x5904;&#x7406;</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#51-&#x629B;&#x51FA;&#x548C;&#x6355;&#x83B7;&#x9519;&#x8BEF;" class="md-toc-link">
+            <p>5.1 &#x629B;&#x51FA;&#x548C;&#x6355;&#x83B7;&#x9519;&#x8BEF;</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#52-catch-&#x548C;-finally-&#x5185;&#x6267;&#x884C;-return" class="md-toc-link">
+            <p>5.2 catch &#x548C; finally &#x5185;&#x6267;&#x884C; return</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#53-&#x5BF9;&#x5F02;&#x6B65;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x9519;&#x8BEF;&#x5904;&#x7406;" class="md-toc-link">
+            <p>5.3 &#x5BF9;&#x5F02;&#x6B65;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x9519;&#x8BEF;&#x5904;&#x7406;</p>
 
           </a></div>
         </div>
       </details>
-    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
-          <a href="#3&#x8FD0;&#x7B97;" class="md-toc-link">
-            <p>3.&#x8FD0;&#x7B97;</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
-          <a href="#5&#x9519;&#x8BEF;&#x5904;&#x7406;" class="md-toc-link">
-            <p>5.&#x9519;&#x8BEF;&#x5904;&#x7406;</p>
-
-          </a></div>
+    
 </div>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>
